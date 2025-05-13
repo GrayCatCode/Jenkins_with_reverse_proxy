@@ -1,6 +1,7 @@
 # docker-compose.yaml
 version: '3.8'
 services:
+
    jenkins:
       container_name: jenkins
       image: jenkins/jenkins:lts
@@ -24,6 +25,6 @@ services:
       depends_on:
       - jenkins
 
-      networks:
-         jenkins_net:
-            driver: bridge
+networks:
+   jenkins_net:
+      driver: bridge
