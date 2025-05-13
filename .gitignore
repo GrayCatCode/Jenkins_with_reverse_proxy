@@ -1,1 +1,5 @@
+# Ignore all Jenkins working files and subdirectories:
 jenkins/*
+
+# Ignore all nginx log files:
+nginx/*
